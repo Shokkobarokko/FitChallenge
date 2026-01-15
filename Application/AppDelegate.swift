@@ -9,12 +9,20 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if UserDefaults.standard.bool(forKey: "isLoggedIn"){
+            showMainScreen()
+        }
         return true
+    }
+    
+    func showMainScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "MainTabBarController")
+        window?.rootViewController = mainVC
     }
 
     // MARK: UISceneSession Lifecycle

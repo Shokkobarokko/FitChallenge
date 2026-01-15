@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXFileReference section */
@@ -11,10 +11,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FC732EC62F0C0ED700152879 /* Exceptions for "FitChallenge" folder in "FitChallenge" target */ = {
+		FC732FD02F0C209A00152879 /* Exceptions for "Resources" folder in "FitChallenge" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				SupportingFiles/Info.plist,
 			);
 			target = FC732EB32F0C0ED400152879 /* FitChallenge */;
 		};
@@ -23,10 +23,40 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FC732EB62F0C0ED400152879 /* FitChallenge */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FC732EC62F0C0ED700152879 /* Exceptions for "FitChallenge" folder in "FitChallenge" target */,
-			);
 			path = FitChallenge;
+			sourceTree = "<group>";
+		};
+		FC732ECC2F0C100C00152879 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC732ECD2F0C101800152879 /* ViewControllers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FC732ECE2F0C102B00152879 /* Application */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FC732ECF2F0C105800152879 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC732F272F0C13D800152879 /* Utilities */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FC732F412F0C14C100152879 /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FC732FD02F0C209A00152879 /* Exceptions for "Resources" folder in "FitChallenge" target */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -34,10 +64,8 @@
 /* Begin PBXFrameworksBuildPhase section */
 		FC732EB12F0C0ED400152879 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -45,6 +73,12 @@
 		FC732EAB2F0C0ED400152879 = {
 			isa = PBXGroup;
 			children = (
+				FC732ECD2F0C101800152879 /* ViewControllers */,
+				FC732F412F0C14C100152879 /* Resources */,
+				FC732F272F0C13D800152879 /* Utilities */,
+				FC732ECF2F0C105800152879 /* Views */,
+				FC732ECE2F0C102B00152879 /* Application */,
+				FC732ECC2F0C100C00152879 /* Models */,
 				FC732EB62F0C0ED400152879 /* FitChallenge */,
 				FC732EB52F0C0ED400152879 /* Products */,
 			);
@@ -71,14 +105,16 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			fileSystemSynchronizedGroups = (
 				FC732EB62F0C0ED400152879 /* FitChallenge */,
+				FC732ECC2F0C100C00152879 /* Models */,
+				FC732ECD2F0C101800152879 /* ViewControllers */,
+				FC732ECE2F0C102B00152879 /* Application */,
+				FC732ECF2F0C105800152879 /* Views */,
+				FC732F272F0C13D800152879 /* Utilities */,
+				FC732F412F0C14C100152879 /* Resources */,
 			);
 			name = FitChallenge;
-			packageProductDependencies = (
-			);
 			productName = FitChallenge;
 			productReference = FC732EB42F0C0ED400152879 /* FitChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -107,7 +143,7 @@
 			);
 			mainGroup = FC732EAB2F0C0ED400152879;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = FC732EB52F0C0ED400152879 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,25 +156,21 @@
 /* Begin PBXResourcesBuildPhase section */
 		FC732EB22F0C0ED400152879 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC732EB02F0C0ED400152879 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FC732EC82F0C0ED700152879 /* Debug */ = {
+		FC732EC82F0C0ED700152879 /* Debug configuration for PBXNativeTarget "FitChallenge" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -146,7 +178,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FitChallenge/Info.plist;
+				INFOPLIST_FILE = Resources/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -160,6 +192,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Parsadanyan.FitChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -169,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		FC732EC92F0C0ED700152879 /* Release */ = {
+		FC732EC92F0C0ED700152879 /* Release configuration for PBXNativeTarget "FitChallenge" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -177,7 +213,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FitChallenge/Info.plist;
+				INFOPLIST_FILE = Resources/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -191,6 +227,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Parsadanyan.FitChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -200,7 +240,7 @@
 			};
 			name = Release;
 		};
-		FC732ECA2F0C0ED700152879 /* Debug */ = {
+		FC732ECA2F0C0ED700152879 /* Debug configuration for PBXProject "FitChallenge" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +303,7 @@
 			};
 			name = Debug;
 		};
-		FC732ECB2F0C0ED700152879 /* Release */ = {
+		FC732ECB2F0C0ED700152879 /* Release configuration for PBXProject "FitChallenge" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -325,19 +365,17 @@
 		FC732EAF2F0C0ED400152879 /* Build configuration list for PBXProject "FitChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC732ECA2F0C0ED700152879 /* Debug */,
-				FC732ECB2F0C0ED700152879 /* Release */,
+				FC732ECA2F0C0ED700152879 /* Debug configuration for PBXProject "FitChallenge" */,
+				FC732ECB2F0C0ED700152879 /* Release configuration for PBXProject "FitChallenge" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		FC732EC72F0C0ED700152879 /* Build configuration list for PBXNativeTarget "FitChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC732EC82F0C0ED700152879 /* Debug */,
-				FC732EC92F0C0ED700152879 /* Release */,
+				FC732EC82F0C0ED700152879 /* Debug configuration for PBXNativeTarget "FitChallenge" */,
+				FC732EC92F0C0ED700152879 /* Release configuration for PBXNativeTarget "FitChallenge" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */

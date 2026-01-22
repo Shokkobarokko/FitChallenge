@@ -30,6 +30,9 @@ class AuthManager {
     
     func logout() {
         UserDefaults.standard.removeObject(forKey: "isLoggedIn")
+        UserDefaults.standard.removeObject(forKey: "userEmail")
+        UserDefaults.standard.removeObject(forKey: "userName")
+        UserDefaults.standard.removeObject(forKey: "userRole")
     }
     
     func isLoggedIn() -> Bool {

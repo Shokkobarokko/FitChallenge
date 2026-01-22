@@ -81,7 +81,15 @@ extension ChallengeListViewController {
         let alert = UIAlertController(title: "Выйти?", message: "Вы действительно хотите выйти?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Отмена", style: .cancel))
         alert.addAction(UIAlertAction(title: "Выйти", style: .destructive, handler: { _ in
-            print("Пользователь вышел")
+            AuthManager.shared.logout()
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let welcomeVC = storyboard.instantiateInitialViewController()
+            
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+               let window = windowScene.windows.first {
+                window.rootViewController = welcomeVC
+            }
         }))
         present(alert, animated: true)
     }

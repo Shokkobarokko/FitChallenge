@@ -148,10 +148,17 @@ final class RegisterViewController: UIViewController {
         let viewController: UIViewController
         
         if selectedRole == "coach" {
+            print("Открываю CoachTabBarController")
             viewController = storyBoard.instantiateViewController(withIdentifier: "CoachTabBarController")
         } else {
+            print("Открываю MainTabBarController")
             viewController = storyBoard.instantiateViewController(withIdentifier: "MainTabBarController")
         }
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                  let window = windowScene.windows.first {
+                   window.rootViewController = viewController
+                   UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: nil)
+               }
     }
     
     private func showError(_ message: String) {

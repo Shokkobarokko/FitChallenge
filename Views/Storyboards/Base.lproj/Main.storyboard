@@ -201,6 +201,22 @@
             </objects>
             <point key="canvasLocation" x="3889" y="-204"/>
         </scene>
+        <!--Coach Dashboard View Controller-->
+        <scene sceneID="05Q-V8-LOS">
+            <objects>
+                <viewController id="3oh-Sn-7bo" customClass="CoachDashboardViewController" customModule="FitChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fAc-4R-kWm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bl3-lP-m5h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XX4-Zn-tFU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZg-MC-YP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3618" y="2758"/>
+        </scene>
         <!--Профиль-->
         <scene sceneID="1GA-Ch-zGA">
             <objects>
@@ -353,10 +369,120 @@
             </objects>
             <point key="canvasLocation" x="1100" y="629.57746478873241"/>
         </scene>
+        <!--Coach Tab Bar Controller-->
+        <scene sceneID="eli-Qf-dzW">
+            <objects>
+                <tabBarController storyboardIdentifier="CoachTabBarController" id="Bzn-S1-qhI" customClass="CoachTabBarController" customModule="FitChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JyM-wx-sDx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vZQ-Mz-7cR" kind="relationship" relationship="viewControllers" id="QKT-7C-fdd"/>
+                        <segue destination="3n6-1c-DFe" kind="relationship" relationship="viewControllers" id="R6S-hn-c7q"/>
+                        <segue destination="FH6-PV-U5X" kind="relationship" relationship="viewControllers" id="tMQ-25-dQt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qf0-b3-kTB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2198" y="1250"/>
+        </scene>
+        <!--Мои марафоны-->
+        <scene sceneID="8cp-EE-HY1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vZQ-Mz-7cR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Мои марафоны" image="list.bullet" catalog="system" id="IT7-TG-V1o"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rb7-QE-YES">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3oh-Sn-7bo" kind="relationship" relationship="rootViewController" id="gT9-Ly-eY1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TsY-QM-rge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3619" y="1985"/>
+        </scene>
+        <!--Create Challenge View Controller-->
+        <scene sceneID="d75-z3-eYG">
+            <objects>
+                <viewController id="JrR-kd-HNs" customClass="CreateChallengeViewController" customModule="FitChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CJ8-UI-Sgs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7GD-gt-hdm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FuB-BY-12q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pC1-kg-JeE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2534" y="2758"/>
+        </scene>
+        <!--Coach Profile Veiw Controller-->
+        <scene sceneID="MeM-x9-LrF">
+            <objects>
+                <viewController id="hKV-O6-vxD" customClass="CoachProfileVeiwController" customModule="FitChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zEv-PT-3tj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="F45-KY-2yo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="deE-EO-cJV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXn-9b-mvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="2758"/>
+        </scene>
+        <!--Создать-->
+        <scene sceneID="ucC-Lr-z1Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3n6-1c-DFe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Создать" image="plus.circle" catalog="system" id="wGI-6C-vyO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uWy-eT-s0R">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JrR-kd-HNs" kind="relationship" relationship="rootViewController" id="jI8-Ly-IXi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DO4-Cl-MWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2535" y="1985"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="IxD-DO-vqG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FH6-PV-U5X" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person.fill" catalog="system" id="2t0-5x-rII"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nsM-rG-nG6">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hKV-O6-vxD" kind="relationship" relationship="rootViewController" id="SeZ-q4-bR3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Xp-Ca-47h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="1985"/>
+        </scene>
     </scenes>
     <resources>
         <image name="list.bullet" catalog="system" width="128" height="87"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

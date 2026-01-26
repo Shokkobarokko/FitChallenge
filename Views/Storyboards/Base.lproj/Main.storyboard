@@ -16,23 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="95" translatesAutoresizingMaskIntoConstraints="NO" id="cxz-Ze-fJh">
-                                <rect key="frame" x="16" y="344.33333333333331" width="361" height="163.66666666666669"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="cxz-Ze-fJh">
+                                <rect key="frame" x="16" y="218" width="361" height="416"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bO-7i-2Wz">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="34.333333333333336"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qko-Lp-5FB">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="65.333333333333329"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYj-U8-lSR">
+                                        <rect key="frame" x="0.0" y="125.3333333333333" width="361" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh0-GD-p1R">
+                                        <rect key="frame" x="0.0" y="205.66666666666669" width="361" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bO-7i-2Wz" customClass="PrimaryButton" customModule="FitChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="286" width="361" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="uJN-Au-EKA"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Войти"/>
                                         <connections>
-                                            <segue destination="dT8-qC-MEH" kind="presentation" modalPresentationStyle="fullScreen" id="HAK-Yn-lJC"/>
+                                            <segue destination="dT8-qC-MEH" kind="presentation" identifier="showLogin" modalPresentationStyle="fullScreen" id="HAK-Yn-lJC"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOE-io-waT">
-                                        <rect key="frame" x="0.0" y="129.33333333333337" width="361" height="34.333333333333343"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOE-io-waT" customClass="PrimaryButton" customModule="FitChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="381" width="361" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Tts-ZJ-EnX"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Регистрация"/>
                                         <connections>
-                                            <segue destination="tGD-Xq-4nI" kind="presentation" modalPresentationStyle="fullScreen" id="pxo-tq-qll"/>
+                                            <segue destination="tGD-Xq-4nI" kind="presentation" identifier="showRegister" modalPresentationStyle="fullScreen" id="pxo-tq-qll"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -42,11 +63,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cxz-Ze-fJh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="08f-bf-OrO"/>
+                            <constraint firstItem="cxz-Ze-fJh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="J9r-3j-9So"/>
                             <constraint firstItem="cxz-Ze-fJh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PEP-Bn-cew"/>
                             <constraint firstItem="cxz-Ze-fJh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ydy-ry-mGl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cxz-Ze-fJh" secondAttribute="trailing" constant="16" id="tku-cV-gbA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="0bO-7i-2Wz" id="l4C-ND-a0t"/>
+                        <outlet property="logoImageView" destination="qko-Lp-5FB" id="c0t-GH-CQH"/>
+                        <outlet property="registerButton" destination="JOE-io-waT" id="7jn-j7-2zE"/>
+                        <outlet property="subtitleLabel" destination="dh0-GD-p1R" id="Zzy-yN-zuu"/>
+                        <outlet property="titleLabel" destination="RYj-U8-lSR" id="vL4-dT-vlG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,10 +1,3 @@
-//
-//  RegisterViewController.swift
-//  FitChallenge
-//
-//  Created by Аветис Парсаданян on 1/5/26.
-//
-
 import UIKit
 
 enum Role: String {
@@ -23,6 +16,7 @@ final class RegisterViewController: UIViewController {
     @IBOutlet var errorLabel: UILabel!
     @IBOutlet var userRoleButton: UIButton!
     @IBOutlet var coachRoleButton: UIButton!
+    
     
     private var selectedRole: String = "user"
     
